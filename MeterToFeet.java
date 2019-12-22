@@ -6,5 +6,6 @@ class MeterToFeet {
         System.out.print("Enter meter: ");
         float m = n.nextFloat();
         System.out.println(m + " in Feet = " + m / 0.3048 + " ft");
+        n.close();
     }
 }
