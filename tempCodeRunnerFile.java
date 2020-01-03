@@ -1,1 +1,1 @@
-n
+minSum += a
