@@ -1,1 +1,1 @@
-brr
+Integer.parseInt(System.console().readLine());
