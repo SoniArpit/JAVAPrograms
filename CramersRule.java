@@ -7,7 +7,12 @@
 */
 class CramersRule {
     public static void main(String argsp[]) {
-        float a = 3.4f, b = 50.2f, c = 2.1f, d = 0.55f, e = 44.5f, f = 5.9f;
+        float a = Float.parseFloat(System.console().readLine("Enter value of a: ")),
+            b = Float.parseFloat(System.console().readLine("Enter value of b: ")), 
+            c =Float.parseFloat(System.console().readLine("Enter value of c: ")), 
+            d = Float.parseFloat(System.console().readLine("Enter value of d: ")), 
+            e = Float.parseFloat(System.console().readLine("Enter value of e: ")),  
+            f = Float.parseFloat(System.console().readLine("Enter value of f: "));
 
         System.out.println("x=" + ((e * d) - (b * f)) / ((a * d) - (b * c)));
         System.out.println("y=" + ((a * f) - (e * c)) / ((a * d) - (b * c)));
