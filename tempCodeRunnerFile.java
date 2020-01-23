@@ -1,1 +1,1 @@
-Integer.parseInt(System.console().readLine());
+import java.util.Scanner;
