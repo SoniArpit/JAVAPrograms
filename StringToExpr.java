@@ -10,7 +10,8 @@ class StringToExpr {
         // char main[] = new char[st.length()];
         int i, exPos = 0;
         for (i = 0; i < st.length(); i++) {
-            if (st.charAt(i) == '+')
+            if (st.charAt(i) == '+' || st.charAt(i) == '-' || st.charAt(i) == '*' || st.charAt(i) == '/'
+                    || st.charAt(i) == '%')
                 exPos = i;
 
         }
@@ -23,8 +24,8 @@ class StringToExpr {
             r[i] = st.charAt(i);
         }
 
-        int lVal = Integer.parseInt(String.valueOf(l));
-        int rVal = Integer.parseInt(String.valueOf(r));
+        String lVal = String.valueOf(l);
+        String rVal = String.valueOf(r);
 
         System.out.println(lVal + " " + st.charAt(exPos) + " " + rVal);
 
