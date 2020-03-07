@@ -28,6 +28,6 @@ public class Dinesh {
             else
                 System.out.println("c is gretest");
         }
-
+        input.close();
     }
 }
